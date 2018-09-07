@@ -1,0 +1,124 @@
+﻿body {
+    background-color: black;
+    background-image: linear-gradient(to bottom right, #e0876a, #fbefcc);
+    font-family: Arial, Helvetica, sans;
+    color: #d76e1b;
+    font-size: 100%;
+}
+body.main {
+    margin: 0;
+}
+
+#keepfade {
+    -webkit-animation-fill-mode: forwards; /* Chrome 16+, Safari 4+ */
+    -moz-animation-fill-mode: forwards; /* FF 5+ */
+    -o-animation-fill-mode: forwards; /* Not implemented yet */
+    -ms-animation-fill-mode: forwards; /* IE 10+ */
+    animation-fill-mode: forwards;
+   
+}
+
+.acq {
+    font-size: 10em;
+    position: fixed;
+    bottom: 70vh;
+    right: 36vw;
+    color: #f2ae72;
+    text-align: center;
+    text-decoration-style: double;
+    text-transform: uppercase;
+    opacity: 0;
+    animation: colorchange 10s linear 4s infinite;
+    animation-direction: alternate;
+}
+
+img{
+    margin-top: 10vh;
+    position: center;
+    animation: fadeout 3s linear 2s;
+    
+}
+
+
+.button {
+    position: fixed;
+    bottom: 50vh;
+    right: 45vw;
+    padding: 35px 45px;
+    font-size: 1.5em;
+    text-align: center;
+    cursor: pointer;
+    outline: black;
+    color: white;
+    background-color: HEX: #ff6f69;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #fff2df;
+    opacity: 0;
+    animation: fadein 3s linear 4s;
+}
+
+    .button:hover {
+        background-color: #f4a688
+    }
+
+    .button:active {
+        background-color: #e0876a;
+        box-shadow: 0 5px #c83349;
+        transform: translateY(4px);
+    }
+
+
+
+/*Animation Keyframes*/
+@keyframes fadein {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 0.5;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeout {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0.5;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes colorchange {
+    0% {
+        opacity: 1;
+        color: #fbefcc
+    }
+    20% {
+        color: #f9ccac
+    }
+    40% {
+        color: #f4a688
+    }
+    60% {
+        color: #e0876a
+    }
+    80% {
+        opacity: 0.75;
+        color: #e06377
+    }
+    100% {
+        opacity: 0.5;
+        color: #c83349
+    }
+}

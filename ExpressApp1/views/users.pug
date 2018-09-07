@@ -1,0 +1,77 @@
+﻿doctype html
+html
+  head
+    title= title
+    link(rel='stylesheet', href='/stylesheets/StyleSheet1.css')
+    link(rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css")
+    script(src='/javascripts/Javascript.js')
+   
+  body
+    ul.sidenav
+        li
+            a(  class='active', href='#aboutACQ', id='about', onclick='highlight(this)' ) About
+        li
+            a(  href='#group', id='groups', onclick='highlight(this)' ) Groups
+        li
+            a( href='#watch', id='links', onclick='highlight(this)') Watch
+
+    
+    iframe( src="https://open.spotify.com/embed/album/5oVsZVv3e6yIJ3LuzjEYD6" style="margin-left:10vw;margin-top:-0.5vh;position:fixed;" width="250" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media")
+    img( id='album' width='15%' height='15%' src='../images/ACQ album art_Fotor1.jpg')
+    .docScroller
+        .one#aboutACQ
+            .inside
+                h1 About
+                    img(src="../images/avery.jpg" style="display:inline-flex;margin-left:4vw;height:25%;width:25%;")
+                    img(src="../images/averyFlute.jpg" style="display:inline-flex;margin-left:5vw;height:25%;width:25%;")
+                    img(src="../images/averyBari.jpg" style="display:inline-flex;margin-left:5vw;height:25%;width:25%;")
+                    p Avery Cooper is a multi-instrumentalist, bandleader, and educator in the Burlington area. 
+                    p He graduated from UVM in 2017 with a jazz performance degree. He is well versed in alto, tenor and baritone sax, flute, as well as music theory and composition. 
+                    p Now, he works at Champlain Valley Union and Edmonds Middle School, in addition to taking on private lessons. 
+    .docScroller
+        .two#group
+            .inside
+                h1 Groups
+                    ul.groups
+                        li
+                            a(class='facebook', href='https://www.facebook.com/averycooperquartet/')
+                            h2 ACQ
+                            
+                                p ACQ (Avery Cooper Quartet) is a high energy funk/fusion band based out of Burlington VT. 
+                                p They take jazz standards and make them funky, while also performing innovative originals to create a funky musical experience completely unique from todays typical jazz quartet.
+                                    
+                                    ul
+                                        li
+                                            p Avery Cooper - Bandleader, Alto/Bari Sax, Flute
+                                        li  
+                                            p Kevin Nikolaides - Bass
+                                        li
+                                            p Ian Mack  -Guitar
+                                        li
+                                            p Ethan Shafron - Drums
+                        li
+                            
+                            h2 Cooper-Childs Duo
+                                p Avery Cooper (saxes, vocals, flute) and Josh Childs (keys/organ) play classic jazz repertoire, from Charlie Parker to Lee Konitz.
+                                p The two create a intricate and rich sound that’s sure to get your feet tapping.
+                        li
+                            a(class='facebook', href='https://www.facebook.com/theVANMORRISONTRIBUTE/')
+                            h2 Into the Mystic
+                                p Into The Mystic is a Van Morrison Tribute band, led by Justin Panigutti.
+                                
+                        li
+                            
+                            h2 Warm Water
+                                p Warm Water is led by Hannah Hausman on vocals and Jack Hanson on keyboard, playing original music of the jazz and soul traditions.
+                                
+                        li
+                            a(type='link', class='links', href='https://warmwatermusic.com/') warmwatermusic.com
+                            a(class='facebook', href='https://www.facebook.com/strangepurplejelly/')
+                            h2 Strange Purple Jelly
+                                p SPJ plays vibes of funky Rock-n-Roll with that contemporary Rock-n-Soul.
+    .docScroller
+        .three#watch
+            .inside
+                h1 Watch
+                    iframe(src="//www.youtube.com/embed/0pZWoq6rZC8" style="height:50vh;width:50vw;")
+                    iframe(src="//www.youtube.com/embed/rXVipfFIuOQ" style="height:50vh;width:50vw;")
